@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Juguete</string>
+
+
+    <string name="btn_hablar">Hablar</string>
+    <string name="btn_contar">Contar</string>
+    <string name="btn_dormir">Dormir</string>
+    <string name="btn_capturar">Capturar Nombre</string>
+    <string name="btn_decir">Decir Nombre Capturado</string>
+
+    <string name="rs_hablar">Bla bla bla bla</string>
+    <string name="rs_contar">1,2,3,4,5,6</string>
+    <string name="rs_dormir">ZZZZZZZ</string>
+    <string name="rs_capturar">Ingrese el nombre</string>
+    <string name="rs_decir">Se debe ingresar un nombre a través de la opción 4</string>
+    
+    <string name="app_resultado"> </string>
+    <string name="aceptar">Aceptar</string>
+    <string name="nombre_guardado">Se guardo el nombre</string>
+
+</resources>

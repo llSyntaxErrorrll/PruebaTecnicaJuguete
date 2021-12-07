@@ -1,0 +1,63 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blueDark</item>
+        <item name="colorAccent">@color/red</item>
+    </style>
+
+
+
+    <style name="LayoutMax">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="LayoutMin">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="LayoutDefault">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="LayoutLinear" parent="LayoutMax">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+
+    <style name="BtnPrimary" parent="LayoutDefault">
+        <item  name="android:layout_marginLeft">@dimen/normal</item>
+        <item  name="android:layout_marginRight">@dimen/normal</item>
+        <item name="android:layout_marginBottom">@dimen/normal</item>
+    </style>
+    <style name="BtnSecundary" parent="LayoutMin">
+        <item  name="android:layout_marginLeft">@dimen/normal</item>
+        <item  name="android:layout_marginRight">@dimen/normal</item>
+        <item name="android:layout_marginTop">@dimen/normal</item>
+
+    </style>
+
+
+    <style name="txt" parent="LayoutMin">
+        <item name="android:ems">10</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="TxtPrimary" parent="txt">
+        <item name="android:textSize">@dimen/txt_normal</item>
+    </style>
+    <style name="TxtSecondary" parent="txt">
+        <item name="android:textSize">@dimen/txt_min</item>
+    </style>
+
+    <style name="TilNormal" parent="LayoutDefault">
+        <item  name="android:layout_marginLeft">@dimen/hight</item>
+        <item  name="android:layout_marginRight">@dimen/hight</item>
+        <item name="android:layout_marginTop">@dimen/normal</item>
+    </style>
+
+</resources>

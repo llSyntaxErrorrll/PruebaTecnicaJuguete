@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutLinear"
+    tools:context=".MainActivity"
+    android:baselineAligned="false">
+
+    <RelativeLayout
+        style="@style/LayoutMax"
+        android:layout_weight="1">
+
+
+        <androidx.core.widget.NestedScrollView
+            style="@style/LayoutDefault"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                style="@style/LayoutLinear">
+
+                <Button
+                    style="@style/BtnPrimary"
+                    android:id="@+id/btn_hablar"
+                    android:text="@string/btn_hablar"/>
+
+                <Button
+                    style="@style/BtnPrimary"
+                    android:id="@+id/btn_contar"
+                    android:text="@string/btn_contar"/>
+
+                <Button
+                    style="@style/BtnPrimary"
+                    android:id="@+id/btn_dormir"
+                    android:text="@string/btn_dormir"/>
+
+                <Button
+                    style="@style/BtnPrimary"
+                    android:id="@+id/btn_capturar"
+                    android:text="@string/btn_capturar"/>
+
+                <Button
+                    style="@style/BtnPrimary"
+                    android:id="@+id/btn_decir"
+                    android:text="@string/btn_decir"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/LayoutMax"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/TxtPrimary"
+            android:layout_centerInParent="true"
+            android:id="@+id/txt_resultado"
+            android:text="@string/app_resultado"/>
+
+        <RelativeLayout
+            android:id="@+id/ly_capturar"
+            style="@style/LayoutDefault"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/TxtSecondary"
+                android:id="@+id/txt_captura"
+                android:text="@string/rs_capturar"
+                android:layout_centerHorizontal="true"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_nombre"
+                style="@style/TilNormal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/txt_captura">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/LayoutDefault"
+                    android:hint="@string/rs_capturar" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_aceptar"
+                style="@style/BtnSecundary"
+                android:layout_below="@id/txt_nombre"
+                android:layout_centerHorizontal="true"
+                android:text="@string/aceptar"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/blueLight"
+                />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
